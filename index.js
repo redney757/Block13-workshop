@@ -28,8 +28,10 @@ function displayOrder(array) {
     let result = Object.entries(emptyArray)
         .map(([flavor, count]) => `${flavor}: ${count}`)
         .join(", ");
-
-    alert(result); // Display the result in an alert
+    // Display the result in an alert
+    alert(result);
+    //return the new value of the empty array
+    return emptyArray
 }
 
 displayOrder(array);
